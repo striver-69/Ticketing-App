@@ -10,8 +10,6 @@ import {errorHandler} from './middlewares/error-handler'
 const app=express()
 app.use(json())
 
-
-
 app.use(signupRouter)
 app.use(currentUserRouter)
 app.use(signInRouter)

@@ -11,6 +11,9 @@ const app=express()
 app.use(json())
 
 
+app.get('api/User',(req,res)=>{
+  res.send('hi there')
+})
 
 app.use(signupRouter)
 app.use(currentUserRouter)
